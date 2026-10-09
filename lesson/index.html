@@ -106,7 +106,7 @@ mark{background:none;color:var(--blue-2);font-weight:700}
 @keyframes flap{to{transform:scaleY(.35)}}
 
 /* topbar */
-.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);border-bottom:1px solid #EDEFF2}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.94);border-bottom:1px solid #EDEFF2}
 @supports (backdrop-filter:blur(8px)){@media (min-width:900px){.topbar{background:rgba(255,255,255,.8);backdrop-filter:blur(12px)}}}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:66px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
